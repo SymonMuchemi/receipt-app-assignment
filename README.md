@@ -11,4 +11,4 @@ cannot sell more than 4 loaves of bread.
 toast message should show that no discount is awarded.
 
 ## Expected 
-![](Screenshot from 2023-10-14 21-00-18.png)
+![](./Screenshot from 2023-10-14 21-00-18.png)

@@ -62,18 +62,18 @@
             <Button
                 android:id="@+id/milk_button"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:padding="10sp"
+                android:background="@drawable/outlined_button"
+                android:layout_height="40dp"
                 android:text="@string/milk"
                 />
 
             <TextView
                 android:id="@+id/milk_price"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/custom_background"
+                android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:text="@string/dummy_figure"
                 android:textSize="20sp" />
@@ -99,15 +99,17 @@
                 android:padding="5dp"
                 android:text="@string/dummy_figure"
                 android:textSize="20sp" />
-        </LinearLayout><LinearLayout
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal">
             <Button
+                android:id="@+id/sugar_button"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
                 android:text="@string/sugar"
-                android:padding="10sp"
+                android:background="@drawable/outlined_button"
+                android:layout_height="40dp"
                 />
 
             <TextView
@@ -151,9 +153,9 @@
             <Button
                 android:id="@+id/flour_button"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:background="@drawable/outlined_button"
+                android:layout_height="40dp"
                 android:text="@string/flour"
-                android:padding="10sp"
                 />
 
             <TextView
@@ -197,9 +199,9 @@
             <Button
                 android:id="@+id/bread_button"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
                 android:text="@string/bread"
-                android:padding="10sp"
+                android:background="@drawable/outlined_button"
+                android:layout_height="40dp"
                 />
 
             <TextView
@@ -249,14 +251,13 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal"
-            android:layout_marginTop="10dp"
             tools:ignore="UselessParent">
             <Button
                 android:id="@+id/grand_total_button"
                 android:layout_width="170dp"
-                android:layout_height="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/outlined_button"
                 android:text="@string/grand_total"
-                android:padding="10sp"
                 />
 
             <TextView
@@ -275,14 +276,13 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal"
-            android:layout_marginTop="10dp"
             tools:ignore="UselessParent">
             <Button
                 android:id="@+id/discount_button"
                 android:layout_width="170dp"
-                android:layout_height="match_parent"
+                android:background="@drawable/outlined_button"
+                android:layout_height="40dp"
                 android:text="@string/discount"
-                android:padding="10sp"
                 />
 
     <TextView
@@ -301,15 +301,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:orientation="horizontal"
-                android:layout_marginTop="10dp"
                 android:layout_marginBottom="30dp"
                 tools:ignore="UselessParent">
                 <Button
                     android:id="@+id/net_pay_button"
                     android:layout_width="170dp"
-                    android:layout_height="match_parent"
+                    android:background="@drawable/outlined_button"
+                    android:layout_height="40dp"
                     android:text="@string/net_pay"
-                    android:padding="10sp"
                     />
 
             <TextView
