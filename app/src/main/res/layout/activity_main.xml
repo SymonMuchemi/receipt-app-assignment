@@ -6,6 +6,7 @@
     android:layout_height="wrap_content"
     tools:context=".MainActivity"
     android:layout_margin="5dp"
+    android:layout_gravity="center"
     android:background="@drawable/custom_background">
     <LinearLayout
         android:id="@+id/top_layout"
