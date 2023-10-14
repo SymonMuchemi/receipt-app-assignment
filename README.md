@@ -10,5 +10,3 @@ cannot sell more than 4 loaves of bread.
 4. Discount of 15% only applies when the Grand Total amount exceeds 10,000 otherwise, a
 toast message should show that no discount is awarded.
 
-## Expected 
-![](./Screenshot from 2023-10-14 21-00-18.png)
