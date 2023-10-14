@@ -121,5 +121,10 @@ public class MainActivity extends AppCompatActivity {
             else
                 Toast.makeText(this, "You are not eligible for a discount", Toast.LENGTH_SHORT).show();
         });
+
+        netPayButton.setOnClickListener(v -> {
+            netPayAmount = grandTotalAmount - discountAmount;
+            netPay.setText(String.valueOf(netPayAmount));
+        });
     }
 }
