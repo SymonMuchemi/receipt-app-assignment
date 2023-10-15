@@ -12,23 +12,26 @@
         android:id="@+id/top_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:orientation="vertical"
         android:layout_margin="5dp"
-        android:gravity="top">
+        android:gravity="top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
             android:gravity="top">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="@string/item"
                 android:textStyle="bold"
+                android:textColor="@color/black"
                 android:layout_marginStart="15dp"
                 />
             <TextView
@@ -36,12 +39,14 @@
                 android:layout_height="wrap_content"
                 android:text="@string/price"
                 android:textStyle="bold"
+                android:textColor="@color/black"
                 android:layout_marginStart="55dp"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/vat"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:layout_marginStart="45dp"
                 />
@@ -50,6 +55,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/actual_price"
                 android:textStyle="bold"
+                android:textColor="@color/black"
                 android:layout_marginStart="25dp"
                 />
         </LinearLayout>
@@ -64,9 +70,9 @@
                 android:id="@+id/milk_button"
                 android:layout_width="95dp"
                 android:layout_height="48dp"
-                android:background="@drawable/outlined_button"
                 android:text="@string/milk"
-                tools:ignore="TextSizeCheck" />
+                android:textColor="@color/white"
+                android:background="@drawable/outlined_button" />
 
             <TextView
                 android:id="@+id/milk_price"
@@ -107,6 +113,7 @@
                 android:layout_width="95dp"
                 android:layout_height="48dp"
                 android:text="@string/sugar"
+                android:textColor="@color/white"
                 android:background="@drawable/outlined_button"
                 />
 
@@ -150,6 +157,7 @@
                 android:layout_width="95dp"
                 android:background="@drawable/outlined_button"
                 android:layout_height="48dp"
+                android:textColor="@color/white"
                 android:text="@string/flour"
                 />
 
@@ -193,6 +201,7 @@
                 android:layout_width="95dp"
                 android:layout_height="48dp"
                 android:text="@string/bread"
+                android:textColor="@color/white"
                 android:background="@drawable/outlined_button"
                 />
 
@@ -247,6 +256,7 @@
                 android:layout_height="48dp"
                 android:background="@drawable/outlined_button"
                 android:text="@string/grand_total"
+                android:textColor="@color/white"
                 />
 
             <TextView
@@ -273,6 +283,7 @@
                 android:background="@drawable/outlined_button"
                 android:layout_height="48dp"
                 android:text="@string/discount"
+                android:textColor="@color/white"
                 />
 
     <TextView
@@ -300,6 +311,7 @@
                     android:background="@drawable/outlined_button"
                     android:layout_height="48dp"
                     android:text="@string/net_pay"
+                    android:textColor="@color/white"
                     />
 
             <TextView
