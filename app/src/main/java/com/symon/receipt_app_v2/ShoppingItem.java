@@ -3,7 +3,7 @@ package com.symon.receipt_app_v2;
 
 public class ShoppingItem {
     int count = 0;
-    float price = 0;
+    float price;
     float grossAmount = 0;
     float vat = 0;
     float actualPrice = 0;
@@ -22,15 +22,13 @@ public class ShoppingItem {
         }
     }
 
+    private float calculateGrossAmount(float price, int count) {
+        return price * count;
+    }
     private float calculateVat(float grossAmount) {
         return (float) (grossAmount * 0.16);
     }
     private  float calculateActualPrice(float grossAmount) {
         return grossAmount + calculateVat(grossAmount);
     }
-    private float calculateGrossAmount(float price, int count) {
-        return price * count;
-    }
-
-
 }

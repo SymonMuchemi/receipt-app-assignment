@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
             if (milk.count < 4)
             {
                 milk.incrementCount();
-                milkPrice.setText(String.valueOf(milk.price));
+                milkPrice.setText(String.valueOf(milk.grossAmount));
                 milkPriceVat.setText(String.valueOf(milk.vat));
                 actualMilkPrice.setText(String.valueOf(milk.actualPrice));
             }
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
             if (sugar.count < 4)
             {
                 sugar.incrementCount();
-                sugarPrice.setText(String.valueOf(sugar.price));
+                sugarPrice.setText(String.valueOf(sugar.grossAmount));
                 sugarPriceVat.setText(String.valueOf(sugar.vat));
                 actualSugarPrice.setText(String.valueOf(sugar.actualPrice));
             }
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
             if (flour.count < 4)
             {
                 flour.incrementCount();
-                flourPrice.setText(String.valueOf(flour.price));
+                flourPrice.setText(String.valueOf(flour.grossAmount));
                 flourPriceVat.setText(String.valueOf(flour.vat));
                 actualFlourPrice.setText(String.valueOf(flour.actualPrice));
             }
@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
             if (bread.count < 4)
             {
                 bread.incrementCount();
-                breadPrice.setText(String.valueOf(bread.price));
+                breadPrice.setText(String.valueOf(bread.grossAmount));
                 breadPriceVat.setText(String.valueOf(bread.vat));
                 actualBreadPrice.setText(String.valueOf(bread.actualPrice));
             }
@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         grandTotalButton.setOnClickListener(v -> {
-            grandTotalAmount = (float) (milk.actualPrice + sugar.actualPrice + flour.actualPrice + bread.actualPrice);
+            grandTotalAmount = (milk.actualPrice + sugar.actualPrice + flour.actualPrice + bread.actualPrice);
             grandTotal.setText(String.valueOf(grandTotalAmount));
         });
 
